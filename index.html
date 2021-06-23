@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Abu Taw Haa MD. Adnan Lecture</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({		
+					//main settings
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"modern_skin_white",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"yes",
+					privateVideoPassword:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#FF0000",
+					selectedHEXButtonsColor:"#000000",
+					googleAnalyticsTrackingCode:"",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					rightClickContextMenu:"developer",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:1160,
+					maxHeight:552,
+					volume:.8,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#FFFFFF",
+					videoBackgroundColor:"#ebebeb",
+					posterBackgroundColor:"#ebebeb",
+					buttonsToolTipFontColor:"#000000",
+					//logo settings
+					showLogo:"no",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//playlists/categories settings
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"no",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:7,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#000000",
+					//playlist settings
+					showPlaylistButtonAndPlaylist:"yes",
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:290,
+					playlistBottomHeight:599,
+					startAtVideo:0,
+					maxPlaylistItems:50,
+					thumbnailWidth:70,
+					thumbnailHeight:70,
+					spaceBetweenControllerAndPlaylist:2,
+					spaceBetweenThumbnails:2,
+					scrollbarOffestWidth:8,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#FFFFFF",
+					playlistNameColor:"#000000",
+					thumbnailNormalBackgroundColor:"#ebebeb",
+					thumbnailHoverBackgroundColor:"#dcdcdc",
+					thumbnailDisabledBackgroundColor:"#c0c0c0",
+					searchInputBackgroundColor:"#c0c0c0",
+					searchInputColor:"#333333",
+					youtubeAndFolderVideoTitleColor:"#000000",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#919191",
+					youtubeDescriptionColor:"#919191",
+					mainSelectorBackgroundSelectedColor:"#000000",
+					mainSelectorTextNormalColor:"#000000",
+					mainSelectorTextSelectedColor:"#FFFFFFF",
+					mainButtonBackgroundNormalColor:"#FFFFFF",
+					mainButtonBackgroundSelectedColor:"#000000",
+					mainButtonTextNormalColor:"#000000",
+					mainButtonTextSelectedColor:"#FFFFFF",
+					//controller settings
+					showController:"yes",
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"yes",
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"no",
+					showDownloadButton:"no",
+					showShareButton:"no",
+					showEmbedButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"no",
+					repeatBackground:"yes",
+					controllerHeight:43,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:17,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:2,
+					timeOffsetTop:1,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:20,
+					timeColor:"#919191",
+					youtubeQualityButtonNormalColor:"#919191",
+					youtubeQualityButtonSelectedColor:"#000000",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//subtitle
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"no",
+					//embed window and info window
+					embedAndInfoWindowCloseButtonMargins:7,
+					borderColor:"#CDCDCD",
+					mainLabelsColor:"#000000",
+					secondaryLabelsColor:"#444444",
+					shareAndEmbedTextColor:"#777777",
+					inputBackgroundColor:"#c0c0c0",
+					inputColor:"#333333",
+					//loggin
+					isLoggedIn:"yes",
+					playVideoOnlyWhenLoggedIn:"yes",
+					loggedInMessage:"Please login to view this video.",
+					//audio visualizer
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					//lightbox settings
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					//sticky on scroll
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					//sticky display settings
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					//playback rate / speed
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					//cuepoints
+					executeCuepointsOnlyOnce:"no",
+					//annotations
+					showAnnotationsPositionTool:"no",
+					//ads
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#6a6a6a",
+					adsTextSelectedColor:"#000000",
+					adsBorderNormalColor:"#BBBBBB",
+					adsBorderSelectedColor:"#000000",
+					//a to b loop
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#000000",
+					atbButtonTextNormalColor:"#FFFFFF",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#888888",
+					atbButtonBackgroundSelectedColor:"#000000"
+				});
+		
+		});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999;margin:0px;">	
+	
+		<div id="myDiv"></div>
+		
+		<!--  Playlists -->
+		<ul id="playlists" style="display:none;">
+		
+		
+		
+		
+		
+		<!-- 
+			<li data-source="playlist1" data-playlist-name="MY HTML PLAYLIST 1" data-thumbnail-path="content/thumbnails/large1.jpg">
+				<p class="minimalWhiteCategoriesTitle"><span class="minimalWhiteBold">Title: </span>My HTML playlist 1</p>
+				<p class="minimalWhiteCategoriesType"><span class="minimalWhiteBold">Type: </span>HTML</p>
+				<p class="minimalWhiteCategoriesDescription"><span class="minimalWhiteBold">Description: </span>Created using html elements, videos are loaded and played from the server.</p>
+			</li>
+			
+			--> 
+			
+			
+			
+			
+			<li data-source="vimeoPlaylist" data-playlist-name="ABU TAWHAA LECTURE" data-thumbnail-path="content/thumbnails/large19.jpg">
+				<p class="minimalWhiteCategoriesTitle"><span class="minimalWhiteBold">Title: </span>ABU TAWHAA LECTURE</p>
+				<p class="minimalWhiteCategoriesType"><span class="minimalWhiteBold">Type: </span>LIVE</p>
+				<p class="minimalWhiteCategoriesDescription"><span class="minimalWhiteBold">Description: </span>PLAY NOW</p>
+			</li>
+			
+			
+		</ul>
+		
+		
+		
+		
+		
+		
+		
+	
+		 
+		 
+		 
+		
+			
+		<!--  HTML vimeo playlist -->
+		<ul id="vimeoPlaylist" style="display:none;">
+				<li data-thumb-source="content/thumbnails/v1.jpg" data-video-source="https://vimeo.com/channels/top/566486631" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">আখিরুয যামান-দাজ্জাল ও ফ্যামিনিস্ট রেভেলিউশান</p>
+							<p class="classicWhiteThumbnailDesc">Abu Taw Haa Muhammad Adnan Lecture Video 01</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v2.jpg" data-video-source="https://vimeo.com/channels/top/566488221" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">THE MOUNTAIN</p>
+							<p class="classicWhiteThumbnailDesc">This was filmed between 4th and 11th April 2011. I had the pleasure of visiting El Teide.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v3.jpg" data-video-source="https://vimeo.com/channels/top/566488302" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">THE CITY LIMITS</p>
+							<p class="classicWhiteThumbnailDesc">As of today, it is estimated that there are more than 7 billion humans living on Earth.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v4.jpg" data-video-source="https://vimeo.com/channels/top/566489170" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">LANDSCAPES VOLUME TWO</p>
+							<p class="classicWhiteThumbnailDesc">Each video can contain a short description....</p>
+						</div>
+					</div>
+					
+				</li>
+					
+				<li data-thumb-source="content/thumbnails/v5.jpg" data-video-source="https://vimeo.com/channels/top/566489620" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">WEBCAM</p>
+							<p class="classicWhiteThumbnailDesc">"Webcam" is based on actual events and was shot entirely on a computer's webcam.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v6.jpg" data-video-source="https://vimeo.com/channels/top/566513171" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">BIRDS ON THE WIRES</p>
+							<p class="classicWhiteThumbnailDesc">Reading a newspaper, I saw a picture of birds on the electric wires.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v7.jpg" data-video-source="https://vimeo.com/channels/top/566512676" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">ALMA</p>
+							<p class="classicWhiteThumbnailDesc">Each video can contain a short description....</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v8.jpg" data-video-source="https://vimeo.com/channels/top/566513756" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">INTO THE MIND</p>
+							<p class="classicWhiteThumbnailDesc">HTML5 mp3 player for your website that runs on all major browsers and mobile devices.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v9.jpg" data-video-source="https://vimeo.com/channels/top/566513645" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">POLAR SPIRITS</p>
+							<p class="classicWhiteThumbnailDesc">his is my third short-film about the northern lights.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v10.jpg" data-video-source="https://vimeo.com/channels/top/566513561" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">AMAZING SATURN</p>
+							<p class="classicWhiteThumbnailDesc">Not-for-profit animated IMAX film in early production by a single filmmaker.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v11.jpg" data-video-source="https://vimeo.com/channels/top/566518807" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">MOONWALK</p>
+							<p class="classicWhiteThumbnailDesc">Dean Potter walks a highline at Cathedral Peak as the sun sets and the moon rises.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v12.jpg" data-video-source="https://vimeo.com/channels/top/566519087" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">HECQ Vs EXLILLION</p>
+							<p class="classicWhiteThumbnailDesc">Tim Brown (1st AveMachine) & Christopher Hewitt (Knucklehead) team up for the ...</p>
+						</div>
+					</div>
+					<div data-video-long-description="" >
+						<div>
+							<p class="classicWhiteThumbnailTitle">HECQ Vs EXLILLION</p>
+							<p class="minimalDarkVideoMainDesc">Each video can contain a detailed description, the description can be formatted with CSS as you like. The description window and description button can be disabled individually for each video or globally for all videos.</p>
+							
+						</div>
+					</div>
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v13.jpg" data-video-source="https://vimeo.com/channels/top/27268591" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">DUCK TRON</p>
+							<p class="classicWhiteThumbnailDesc">Tool for displaying large images prepared for showcasing products.</p>
+						</div>	
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v14.jpg" data-video-source="https://www.dailymotion.com/video/x8239eh" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">AURORA BOREALIS</p>
+							<p class="classicWhiteThumbnailDesc">This is selection of northern lights we filmed during the winter 2011 in several locations in the Finnish Lapland.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v15.jpg" data-video-source="https://vimeo.com/channels/top/6132324" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">ARTIFICIAL PARADISE</p>
+							<p class="classicWhiteThumbnailDesc">An experimental film anticipating a future where a major corporation has developed an unique software.</p>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li data-thumb-source="content/thumbnails/v16.jpg" data-video-source="https://vimeo.com/channels/top/6736261" data-poster-source="content/posters/vimeo-poster.jpg,content/posters/vimeo-poster-mobile.jpg">
+					<div data-video-short-description="">
+						<div>
+							<p class="classicWhiteThumbnailTitle">BERLIN BLOCK TETRIS</p>
+							<p class="classicWhiteThumbnailDesc">An animation I made for Uni. Everything is made in After Effects without Plugins.</p>
+						</div>	
+					</div>
+					
+				</li>
+			
+			</ul>
+		
+		
+	</body>
+</html>
+
+
+
+
